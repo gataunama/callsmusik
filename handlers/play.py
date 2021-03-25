@@ -19,7 +19,7 @@ from helpers.decorators import errors
 async def play(_, message: Message):
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
 
-    res = await message.reply_text("🔄 Lagu Kamu Sedanh Di-Proses, Harap Tunggu Sebentar!...")
+    res = await message.reply_text("🔄 Lagu Kamu Sedang Di-Proses, Harap Tunggu Sebentar!...")
 
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
