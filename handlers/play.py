@@ -56,7 +56,7 @@ async def play(_, message: Message):
                         break
 
         if offset in (None,):
-            await res.edit_text("❗️ Maaf Tidak Bisa Dipaksakan!.")
+            await res.edit_text("❗️ Maaf Kalau Mau Menggunakan Aku, Ketik /play Dan Cari Judul Lagu Habis Itu Reply Pesanmu Dan Aku Akan Melaksanakan Tugas!.")
             return
 
         url = text[offset:offset + length]
